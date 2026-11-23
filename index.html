@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meter ESP32-CAM — снимок счётчика в Google Drive</title>
+  <meta name="description" content="Камера ESP32-CAM сохраняет актуальный снимок электросчётчика в вашем Google Drive.">
+  <link rel="stylesheet" href="style.css"><link rel="icon" href="logo.png">
+</head>
+<body>
+<header><a class="brand" href="index.html"><img src="logo.png" alt="" width="44" height="44">Meter ESP32-CAM</a><nav aria-label="Основная навигация"><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></header>
+<main>
+  <section class="hero"><div><p class="eyebrow">КАМЕРА ДЛЯ ЭЛЕКТРОСЧЁТЧИКА</p><h1>Свежий снимок.<br>На вашем диске.</h1><p class="lead">Meter ESP32-CAM фотографирует показания счётчика и отправляет JPEG напрямую в ваш Google Drive. Вы выбираете интервал, камера обновляет один и тот же файл.</p><a class="button" href="#setup">Как это работает</a></div><div class="file"><img src="logo.png" alt="Камера с символом электричества" width="120" height="120"><p>Ваш Google Drive / MeterData</p><strong>electric_meter.jpg</strong><span>Один файл · актуальный снимок</span></div></section>
+  <section class="facts" aria-label="Возможности"><div><strong>20 секунд</strong><span>Интервал по умолчанию</span></div><div><strong>До 31 дня</strong><span>Настраиваемый интервал</span></div><div><strong>Ваш аккаунт</strong><span>Снимки в вашем Google Drive</span></div></section>
+  <section id="setup"><p class="eyebrow">ПЕРВОЕ ПОДКЛЮЧЕНИЕ</p><h2>Настройка через браузер</h2><ol class="steps"><li><h3>Подключите камеру к Wi-Fi</h3><p>При первой настройке подключитесь к сети ESP-camera и откройте <code>192.168.4.1</code>. Выберите домашнюю сеть и сохраните её пароль.</p></li><li><h3>Разрешите доступ в Google</h3><p>На странице камеры запросите код подключения. Откройте указанную камерой страницу Google, введите код и подтвердите доступ к своему аккаунту. Пароль Google вводится только на сайте Google.</p></li><li><h3>Выберите частоту снимков</h3><p>Камера создаст папку MeterData и будет обновлять файл electric_meter.jpg. Периодичность задаётся в её веб-интерфейсе.</p></li></ol></section>
+  <section class="note"><h2>Разрешение только для файлов приложения</h2><p>Приложение запрашивает разрешение Google Drive <code>drive.file</code> для создания и обновления своих файлов. Оно не запрашивает доступ ко всему содержимому диска. Снимки передаются с камеры в Google, без сервера разработчика.</p><a href="privacy.html">Подробнее о данных и отключении доступа</a></section>
+  <section><h2>О проекте и поддержка</h2><p>Meter ESP32-CAM — экспериментальная прошивка для платы AI Thinker ESP32-CAM. Она сохраняет фотографии, но не распознаёт цифры и не заменяет прибор учёта. Для работы необходимы питание, Wi-Fi с доступом в интернет и свободное место в Google Drive.</p><p>Разработчик: Кирилл Иванычев · <a href="mailto:kivanychev@gmail.com">kivanychev@gmail.com</a></p></section>
+</main><footer><span>Meter ESP32-CAM</span><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a></footer>
+</body></html>
